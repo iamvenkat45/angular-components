@@ -1,0 +1,16 @@
+<h4>
+  Contact List</h4>
+<table class="table table-light">
+  <thead>
+    <tr>
+      <th>S.No</th>
+      <th>First Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr [ngClass]="{blue: user.isSelected, bold: user.isBold}" *ngFor="let user of userList; let indexValue=index;" (click)="onClickUser(user)">
+      <td>{{indexValue}}</td>
+      <td>{{user.firstName}}</td>
+    </tr>
+  </tbody>
+</table>

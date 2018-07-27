@@ -1,0 +1,15 @@
+<div>
+  <h4 class="text-center">Contact Details</h4>
+  <button class="btn btn-default" (click)="onSelect()">Get User</button>
+  <div *ngIf="user">
+    <div>
+      <span class="strong">First Name</span>
+      <span> {{user.firstName}}</span>
+    </div>
+    <div>
+      <span class="strong">Last Name</span>
+      <span> {{user.lastName}}</span>
+    </div>
+  </div>
+  
+</div>

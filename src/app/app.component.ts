@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Contacts';
+
+  selectedUser;
+
+  onChildChange(emittedValue) {
+    this.selectedUser = emittedValue;
+  }
+
+  onSave(formValue) {
+    console.log(formValue.value);
+  }
 }
